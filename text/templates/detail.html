@@ -1,0 +1,14 @@
+{%extends 'index.html' %}
+
+{%block content%}
+    <style type="text/css">
+        .product{
+            width: 80%;
+            margin-left: 10%;}
+    </style>
+    <div class="product">
+        <h1>{{ text.text }}</h1>
+        <h2>{{text.full_text}}</h2>
+        <h4>{{ text.create_date }}</h4>
+    </div>
+{%endblock%}

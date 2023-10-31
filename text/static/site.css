@@ -1,0 +1,22 @@
+.btn-primary{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #727272;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 2px solid #c9c9c9;
+    transition: background .2s linear ;
+
+}
+
+.btn-primary:hover {
+    background-color: azure;
+    color: rgb(0, 0, 0);
+
+    
+}
