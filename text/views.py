@@ -20,3 +20,11 @@ def detail(request,id):
             'text' :text
         }
         return render(request, template_name='detail.html', context=context)
+ 
+def filterCountry(request,country):
+    if request.method=='GET':
+        text=Text.objects.filter(country__name = country)
+        context = {
+            'news' :text
+        }
+        return render(request, template_name='news.html', context=context)

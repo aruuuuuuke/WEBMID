@@ -6,6 +6,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('news/', views.all_news),
     path('', views.empty),
-    path('news/<int:id>/', views.detail)
-
-]
+    path('news/<int:id>/', views.detail),
+    path('country/<str:country>/',views.filterCountry)
+]   
