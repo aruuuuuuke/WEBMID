@@ -28,3 +28,5 @@ def filterCountry(request,country):
             'news' :text
         }
         return render(request, template_name='news.html', context=context)
+    
+    
