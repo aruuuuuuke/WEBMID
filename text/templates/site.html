@@ -18,9 +18,12 @@
                 <nav class="nav">
                     <a class="nav__link" href="#">About</a>
                     <a class="nav__link" href="#">Service</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Work</a>
-                    <a class="nav__link" href="#">Contact</a>
+                    {%if user.is_anonymous%}
+                    <a class="nav__link" href="/user/login">Log in</a>
+                    <a class="nav__link" href="/user/registration">Sign in </a>
+                    {%else%}
+                    <a class="nav__link" href="/user/logout/">Log out</a>
+                    {%endif%}
                 </nav>
             </div>
         </div>

@@ -11,6 +11,7 @@ def all_news(request):
 
 def empty(request):
     if request.method == 'GET':
+        print(request.user)
         return render(request, 'site.html')
     
 def detail(request,id):
@@ -28,5 +29,4 @@ def filterCountry(request,country):
             'news' :text
         }
         return render(request, template_name='news.html', context=context)
-    
     
